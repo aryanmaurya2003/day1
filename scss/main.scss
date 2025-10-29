@@ -1,0 +1,324 @@
+@import 'partials/variables';
+@import 'partials/mixins';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: $base-font-family;
+}
+
+.header-container {
+    background: $bg-gray;
+}
+
+.centered-container {
+    // border: 2px solid black;
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+
+    a {
+        text-decoration: none;
+        color: $text-color;
+    }
+}
+
+.flex-content {
+    display: flex;
+    ;
+}
+
+.button {
+    padding: 10px 20px;
+    border: none;
+    background-color: $text-color;
+    color: white;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.primary-button {
+    background: #4CAF4F;
+    color: #fff;
+}
+
+.secondary-button {
+    background: transparent;
+    color: #4CAF4F;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-section {
+    padding: 22px 0;
+}
+
+.heading-1 {
+    font-size: 36px;
+    font-weight: 1000;
+    color: $heading-color;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.para {
+    font-size: 16px;
+    color: #717171;
+}
+
+.care-desc {
+    width: 630px;
+    margin: 0 auto;
+    margin-top: 11px;
+}
+
+.care-container {
+    padding-top: 48px;
+}
+
+.care-image-container {
+    position: relative;
+    width: 368px;
+}
+
+.care-text {
+    position: absolute;
+    background: #F5F7FA;
+    width: 80%;
+    left: 10%;
+    height: 135px;
+    top: 68%;
+    border-radius: 6px;
+    text-align: center;
+    padding: 45px;
+    box-sizing: border-box;
+}
+
+.care-image-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px 0px;
+}
+
+.list-decoration-none {
+    list-style: none;
+}
+
+.content-section {
+    width: 100%;
+}
+
+.client-section {
+    margin-top: 35px;
+}
+
+.client-logo {
+    height: 98px;
+    padding: 0px 24px;
+}
+
+.community-heading {
+    width: 542px;
+    margin: 21px auto;
+}
+
+.community-card {
+    // border: 1px solid #E0E0E0;
+    width: 299px;
+    height: 260px;
+    display: grid;
+    place-content: center;
+    box-shadow:
+    -2px 0 10px -10px #000,
+    2px 0 10px -10px #000;
+
+}
+
+.community-card-container {
+    margin-top: 25px;
+    display: flex;
+    padding: 0px 20px;
+}
+
+.community-card-item {
+    text-align: center;
+    width: 267px;
+    height: 144px;
+}
+
+.community-card-header {
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: bold;
+}
+
+.community-card-para {
+    width: 251px;
+    height: 61px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 20px;
+}
+
+.pixelGrade-section {
+    width: 100%;
+    height: 480px;
+    margin-top: 13px;
+    display: grid;
+    place-content: center;
+}
+
+.pixelGrade-content-container {
+    width: 661px;
+    height: 268px;
+    margin-right: 120px;
+
+    button {
+        margin-top: 15px;
+        width: 151px;
+        height: 52px;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 500;
+    }
+}
+
+.pixelGrade-content {
+    width: 601px;
+    height: 184px;
+
+
+    .pixel-para {
+        margin-top: 15px;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: justify;
+    }
+}
+
+.pixel-image {
+    width: 442px;
+    height: 329px;
+
+    img {
+        margin-left: 30px
+    }
+
+    ;
+
+}
+
+.business-container {
+    margin-top: 48px;
+    text-align: center;
+    margin-left: 44px;
+
+
+
+
+    div {
+        width: 408px;
+        font-size: 36px;
+        font-weight: bold;
+        text-align: left;
+        color: $heading-color;
+
+        span {
+            color: green;
+        }
+    }
+
+    p {
+        margin-top: 11px;
+        font-size: 16px;
+        color: #717171;
+        text-align: left;
+    }
+}
+
+.business-class {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.business-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 540px;
+    height: 160px;
+    gap: 15px;
+
+}
+
+.business-card {
+    display: flex;
+    width: 255px;
+    height: 60px;
+
+    div {
+
+        // margin-left: 15px;
+        padding-left: 10px;
+        text-align: left;
+    }
+
+    span {
+        padding-left: 8px;
+        font-size: 36px;
+        font-weight: bold;
+        ;
+    }
+
+}
+
+.business-img-data {
+    text-align: left;
+}
+
+.design-content {
+    width: 601px;
+    height: 268px;
+
+
+    .pixel-para {
+        margin-top: 15px;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: justify;
+    }
+}
+
+.customer-para{
+    margin-top: 2px;
+    font-size: 16px;
+    color: #717171;
+
+    font-weight: 500;
+    line-height: 24px;
+
+}
+.flex-customer{
+    display: flex;
+    justify-content: space-between;
+
+}
+.customer-content{
+    width: 748px;
+padding-right: 50px;
+}
